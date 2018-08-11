@@ -1,0 +1,6 @@
+com\school\wts\rest\App.class
+com\school\wts\rest\dto\UserDTO.class
+com\school\wts\rest\entity\User.class
+com\school\wts\rest\repository\UserRepository.class
+com\school\wts\rest\controller\UserController.class
+com\school\wts\rest\dao\UserDAO.class
