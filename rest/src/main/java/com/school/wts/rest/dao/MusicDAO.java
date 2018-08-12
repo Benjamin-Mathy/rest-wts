@@ -54,7 +54,7 @@ public class MusicDAO {
 			music.get().setTitle(newMusic.getTitle());
 			music.get().setArtist(newMusic.getArtist());
 			music.get().setGenre(newMusic.getGenre());
-			music.get().setFilePath(newMusic.getFilePath());
+			music.get().setFileDriveID(newMusic.getFileDriveID());
 			Music response = repository.save(music.get());
 			return MusicMapper.entityToDto(response);
 		}

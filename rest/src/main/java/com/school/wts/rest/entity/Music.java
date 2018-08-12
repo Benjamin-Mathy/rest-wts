@@ -17,7 +17,7 @@ public class Music {
 	private String title;
 	private String artist;
 	private String genre;
-	private String filePath;
+	private String fileDriveID;
 
 	private Music() {
 		super();
@@ -27,14 +27,14 @@ public class Music {
 	 * @param title
 	 * @param artist
 	 * @param genre
-	 * @param filePath
+	 * @param fileDriveID
 	 */
-	public Music(String title, String artist, String genre, String filePath) {
+	public Music(String title, String artist, String genre, String fileDriveID) {
 		this();
 		this.title = title;
 		this.artist = artist;
 		this.genre = genre;
-		this.filePath = filePath;
+		this.fileDriveID = fileDriveID;
 	}
 
 	/**
@@ -42,15 +42,15 @@ public class Music {
 	 * @param title
 	 * @param artist
 	 * @param genre
-	 * @param filePath
+	 * @param fileDriveID
 	 */
-	public Music(Long id, String title, String artist, String genre, String filePath) {
+	public Music(Long id, String title, String artist, String genre, String fileDriveID) {
 		this();
 		this.id = id;
 		this.title = title;
 		this.artist = artist;
 		this.genre = genre;
-		this.filePath = filePath;
+		this.fileDriveID = fileDriveID;
 	}
 
 	/**
@@ -110,17 +110,17 @@ public class Music {
 	}
 
 	/**
-	 * @return the filePath
+	 * @return the fileDriveID
 	 */
-	public String getFilePath() {
-		return filePath;
+	public String getFileDriveID() {
+		return fileDriveID;
 	}
 
 	/**
-	 * @param filePath the filePath to set
+	 * @param filePath the fileDriveID to set
 	 */
-	public void setFilePath(String filePath) {
-		this.filePath = filePath;
+	public void setFileDriveID(String filePath) {
+		this.fileDriveID = filePath;
 	}
 
 }

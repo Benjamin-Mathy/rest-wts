@@ -16,11 +16,11 @@ public class MusicMapper {
 	}
 	
 	public static MusicDTO entityToDto(Music music) {
-		return new MusicDTO(music.getId(), music.getTitle(), music.getArtist(), music.getGenre(), music.getFilePath());
+		return new MusicDTO(music.getId(), music.getTitle(), music.getArtist(), music.getGenre(), music.getFileDriveID());
 	}
 	
 	public static Music dtoToEntity(MusicDTO musicDTO) {
-		return new Music(musicDTO.getId(), musicDTO.getTitle(), musicDTO.getArtist(), musicDTO.getGenre(), musicDTO.getFilePath());
+		return new Music(musicDTO.getId(), musicDTO.getTitle(), musicDTO.getArtist(), musicDTO.getGenre(), musicDTO.getFileDriveID());
 	}
 
 
